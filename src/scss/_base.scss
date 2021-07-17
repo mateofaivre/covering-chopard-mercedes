@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Corporate A Bold';
+  src: url('../fonts/Corporate A Bold.otf'); 
+}
+
+@font-face {
+  font-family: 'Corporate A Light';
+  src: url('../fonts/Corporate A Light.ttf');
+}
+
+@font-face {
+  font-family: 'Corporate S';
+  src: url('../fonts/Corporate S.ttf');
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url('../fonts/Aktiv Grotesk W06 Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Integral Extra Bold';
+  src: url('../fonts/IntegralCF-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Integral Regular';
+  src: url('../fonts/IntegralCF-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Sofia';
+  src: url('../fonts/Sofia Pro Regular Az.otf');
+}
+  $listWidth: 35vw;
+  $liWidth: 11rem;
+  $navBg: #050505;
+  $navBorder: white;
+  $navHeight: 4rem;
+  $bg: #050505;
+  $firstColor: white;
+  $secondColor: #050505;
+  $dark: #555;
+  $color--primary: hsla(269, 100%, 50%, 1);
+  $bgHeader: #1c1c1c;
+  $placeholderColor: #757575;
+
+body {
+  font-family: 'Integral Regular';
+  font-size: 16px;
+}
+
+
+.container {
+  padding: 0 32px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+
+@media (max-width: 750px) {
+
+  .container {
+    padding: 0 24px;
+  }
+
+}
+

@@ -1,0 +1,100 @@
+footer {
+    background-color: $bgHeader;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Sofia';
+    color:$placeholderColor;
+    padding: 2rem 5rem;
+    margin-top: 7rem;
+
+    .logosFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        justify-self: left;
+        align-self: center;
+
+        .containerReseaux {
+            width: 100%;
+            margin-top: 1rem;
+            a{
+                display: inline;
+            }
+
+            i {
+                margin: 0 0.7rem 0 0;
+            }
+        }
+        
+
+        hr {
+            margin:0;
+            padding:0;
+            height:2rem;
+            width: 1px;
+            border: none;
+            background-color: $firstColor;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        .mb-logo {
+            width: 2rem;
+        }
+
+        .esadd-logo {
+            width: 3.5rem;
+        }
+    }
+
+    .infosFooter {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-self: right;
+        align-self: flex-end;
+
+        .chopard-logo {
+            width: 6.5rem;
+        }
+
+        a {
+            display:inline;
+
+            &:hover {
+                color: $firstColor;
+            }
+
+            &:not(:first-of-type){
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    footer {
+        grid-template-columns: 60% 40%;
+        padding: 2rem 2rem 6rem 2rem;
+        margin-top: 0rem;
+
+        .pays, .auto {
+            display:none;
+        }
+
+        .groupe-chopard {
+            width: 100%;
+        }
+
+        .infosFooter{            
+            .trucks-logo {
+                width: 5.5rem;
+            }
+    
+            .chopard-logo{
+                width: 5rem;
+            }
+        }        
+    }
+}

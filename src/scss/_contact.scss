@@ -1,0 +1,58 @@
+.contactContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 4rem auto 2rem auto;
+
+    .containerForm {
+        width: 50%;
+        margin: 0 auto;
+
+        form {
+            margin-top: 2rem;
+        }
+
+        input {
+            height: 3rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            font-family: 'Sofia';
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: $bgHeader;
+            color: $firstColor;
+            border-radius: 2px;
+        }
+
+        input[type=submit]{
+            width: 8rem;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        textarea {
+            height: 9rem;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 6rem auto;
+        img {
+          display: none;
+        }
+
+        .containerForm {
+            width: 70%;
+        }
+    }
+}

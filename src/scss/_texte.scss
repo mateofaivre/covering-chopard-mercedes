@@ -1,0 +1,31 @@
+main .txtPres {
+    width: 60%;
+    margin: 2.5rem auto;
+    font-weight: normal;
+    font-family: 'Sofia';
+}
+
+main .separatorTxt {
+    width: 5rem;
+    height: 0.1rem;
+    border:none;
+    background-color: $firstColor;
+
+    &:first-of-type{
+        margin-top: 6rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    main {
+        .separatorTxt {
+            &:first-of-type{
+                margin-top: 5rem;
+            }
+        }
+        .txtPres {
+            width: 80%;
+        }
+    } 
+}
+

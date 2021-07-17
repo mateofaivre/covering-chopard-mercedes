@@ -1,0 +1,240 @@
+.nav {
+    position: relative;
+    color: #C4C4C4;
+}
+
+:root {
+    --dark: #333;
+    --black: black; 
+    --light: #fff;
+    --neutral: #f6f6f6;
+    --neutral-dark: #d1d1d1;
+    --color: #FFEE00;
+    --color-light: #941ed2;
+    --color-dark: #2719cd;
+    --swiper-theme-color: var(--color) !important;
+    --swiper-navigation-size: 37px;
+  }
+
+
+/* MENU ------------------------------------*/
+#menu{
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%); /* décalage de 50% de sa propre taille */
+  color:$firstColor;
+  z-index: 1000;
+  width: 100%;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero__wrapper:before {
+  content: ''; 
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  z-index: -1;
+}
+
+.hero__header {
+  flex: 0 1 1px;
+  padding-right: 50px;
+  color: var(--dark);
+  font-size: 8vmax;
+}
+
+.hero__phone {
+  width: 100%;
+  height: 3.4rem;
+  position: relative;
+}
+
+.hero__phone:before {
+  content: '';
+  width: 175px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.hero__phone:after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.menu__button {
+    font-family: 'Integral Regular';
+  --x: -50%;
+  --y: 50%;
+  --z: 0;
+  display: table-cell;
+  vertical-align: middle;
+  background: $bgHeader;
+  padding: 0.75rem 1.75rem;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 40px -10px var(--black);
+  color:$firstColor;
+  font-size: 1rem;
+  line-height: 1rem;
+  white-space: nowrap; 
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  transform: translate3d(var(--x), var(--y), var(--z));
+  cursor: pointer;
+  transition: 0.15s cubic-bezier(0.33, 1, 0.53, 1);
+
+  i {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.menu__button[hidden] {
+  --y: 200%;
+}
+
+.menu__button div {
+  display: flex;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+}
+
+.menu__button div div {
+  display: table;
+  height: 1px;
+  background:var(--dark);
+  box-shadow: 0 4px 0 var(--dark), 0 -4px 0 var(--dark);
+}
+
+.menu__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+
+}
+
+.menu__body {
+  --x: 0;
+  --y: 0;
+  --z: 0;
+  display: block;
+  width: 100%;
+  background: $bgHeader;
+  box-shadow: 0px -9px 50px -30px black;
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(var(--x), var(--y), var(--z));
+  transition: 0.2s cubic-bezier(0.33, 1, 0.53, 1);
+}
+
+.menu__body[hidden] {
+  --y: 150%;
+}
+
+.menu__body > *:not(:last-child) {
+  border-bottom: 2px solid var(--dark);
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.menu__header p {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.menu__header h3 {
+  font-weight: normal;
+  margin:0;
+}
+
+.menu__header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.menu__header i{
+  font-size: 1.5rem;
+}
+
+.menu__links {
+  display: flex;
+  padding: 20px 7px;
+  font-weight: bold;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.menu__links a {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--dark);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu__contact {
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.menu__contact svg {
+  width: 100%;
+  fill: var(--dark);
+}  
+
+.menu__contact {
+  ul {
+    padding:0;
+    margin: 2rem auto;
+  }
+  li:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  a {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media all and (min-width: 601px) {
+  #menu {
+    display: none;
+  }
+}
