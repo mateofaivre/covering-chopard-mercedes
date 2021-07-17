@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232.1329mm" height="84.0378mm" viewBox="0 0 658.0146 238.2173">
+  <title>Fichier 4</title>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <g>
+        <path d="M441.1806.6519v51.622a66.8623,66.8623,0,1,1,0,133.7246v51.6221a118.4844,118.4844,0,1,0,0-236.9687" fill="#fff"/>
+        <path d="M539.53.6519v51.622a66.8623,66.8623,0,1,1,0,133.7246v51.6221a118.4844,118.4844,0,1,0,0-236.9687" fill="#fff"/>
+        <rect x="51.622" y="0.6519" width="64.0713" height="51.6215" fill="#fff"/>
+        <rect x="51.622" y="185.9985" width="64.0713" height="51.6221" fill="#fff"/>
+        <rect x="51.622" y="93.3257" width="64.0713" height="51.6221" fill="#fff"/>
+        <polygon points="305.071 0.286 228.454 221.199 277.226 238.115 329.456 87.516 381.683 238.113 430.454 221.199 353.842 0.286 305.071 0.286" fill="#fff"/>
+        <rect y="0.6519" width="51.622" height="51.6215" fill="#f9a91a"/>
+        <rect y="93.3257" width="51.622" height="51.6221" fill="#20c4f4"/>
+        <rect y="185.9985" width="51.622" height="51.6221" fill="#f05164"/>
+        <rect x="126.369" y="33.4899" width="107.3698" height="51.6222" transform="translate(62.089 207.6935) rotate(-69.7464)" fill="#fff"/>
+        <rect x="136.7656" y="152.4948" width="108.7054" height="51.6219" transform="translate(-42.4194 295.6908) rotate(-69.6995)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
